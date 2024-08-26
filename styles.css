@@ -1,0 +1,377 @@
+/*-----------------------*/
+/*---- Global Styles ----*/
+/*-----------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 80px;
+    background-color: #1f1f1f;
+    min-width: 320px;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+}
+
+/*-------------------------*/
+/*------- Structure -------*/
+/*-------------------------*/
+
+/*------- Sections --------*/
+
+.section-container {
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    align-self: stretch;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 0 auto 32px auto;
+    max-width: 1600px;
+}
+
+@media screen and (max-width: 1024px) {
+    .section-container {
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-container {
+        padding: 20px;
+    }
+}
+
+/*------- Swatches -------*/
+
+.outer-swatch-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.ind-swatch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+    min-width: 220px;
+}
+
+@media screen and (max-width: 768px) {
+    .ind-swatch-container {
+        min-width: 120px;
+    }
+}
+
+.gray-swatch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+    min-width: 180px;
+}
+
+@media screen and (max-width: 768px) {
+    .gray-swatch-container {
+        min-width: 120px;
+    }
+}
+
+.swatch-red {
+    height: 120px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #F00;
+}
+
+.swatch-yellow {
+    height: 120px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #FFD600;
+}
+
+.swatch-blue {
+    height: 120px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #1348D0;
+}
+
+.swatch-black {
+    height: 120px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #000000;
+}
+
+.swatch-gray {
+    height: 120px;
+    align-self: stretch;
+    border-radius: 8px;
+}
+
+/*------- Fonts -------*/
+
+.outer-font-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 80px 48px;
+    align-self: stretch;
+    align-items: stretch;
+}
+
+.inner-font-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 48%;
+    min-width: 220px;
+    height: 100%;
+}
+
+.font-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+/*------- Type Styles -------*/
+
+.outer-type-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 80px 32px;
+    align-self: stretch;
+    align-items: stretch;
+}
+
+.inner-type-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 48%;
+    min-width: 220px;
+    height: 100%;
+}
+
+.inner-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 48%;
+    min-width: 220px;
+    max-width: 540px;
+    height: 100%;
+}
+
+.type-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+/*--------------------------*/
+/*--------- Colors ---------*/
+/*--------------------------*/
+
+.mon-red {
+    color: #ff0000;
+}
+
+.mon-yellow {
+    color: #FFD600;
+}
+
+.mon-blue {
+    color: #1348D0;
+}
+
+.mon-black {
+    color: #000000;
+}
+
+/*-- Gray Pallette --*/
+
+.gray-0 {
+    color: #FFFFFF;
+}
+
+.gray-50 {
+    color: #F2F2F2;
+}
+
+.gray-100 {
+    color: #E6E6E6;
+}
+
+.gray-200 {
+    color: #CCCCCC;
+}
+
+.gray-250 {
+    color: #BFBFBF;
+}
+
+.gray-300 {
+    color: #B3B3B3;
+}
+
+.gray-400 {
+    color: #999999;
+}
+
+.gray-500 {
+    color: #808080;
+}
+
+.gray-600 {
+    color: #666666;
+}
+
+.gray-700 {
+    color: #4D4D4D;
+}
+
+.gray-800 {
+    color: #333333;
+}
+
+.gray-900 {
+    color: #1A1A1A;
+}
+
+.gray-1000 {
+    color: #000000;
+}
+
+/*-------------------------------------*/
+/*--------- Background Colors ---------*/
+/*-------------------------------------*/
+
+.mon-red-bg {
+    background-color: #ff0000;
+}
+
+.mon-yellow-bg {
+    background-color: #FFD600;
+}
+
+.mon-blue-bg {
+    background-color: #1348D0;
+}
+
+.mon-black-bg {
+    background-color: #000000;
+}
+
+/*-- Gray Pallette --*/
+
+.gray-0-bg {
+    background-color: #FFFFFF;
+}
+
+.gray-50-bg {
+    background-color: #F2F2F2;
+}
+
+.gray-100-bg {
+    background-color: #E6E6E6;
+}
+
+.gray-200-bg {
+    background-color: #CCCCCC;
+}
+
+.gray-250-bg {
+    background-color: #BFBFBF;
+}
+
+.gray-300-bg {
+    background-color: #B3B3B3;
+}
+
+.gray-400-bg {
+    background-color: #999999;
+}
+
+.gray-500-bg {
+    background-color: #808080;
+}
+
+.gray-600-bg {
+    background-color: #666666;
+}
+
+.gray-700-bg {
+    background-color: #4D4D4D;
+}
+
+.gray-800-bg {
+    background-color: #333333;
+}
+
+.gray-900-bg {
+    background-color: #1A1A1A;
+}
+
+.gray-1000-bg {
+    background-color: #000000;
+}
+
+/*---- Text Alignment ----*/
+
+.ta-center {
+    text-align: center;
+}
+
+/*------------------------------*/
+/*------ Utility Classes -------*/
+/*------------------------------*/
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
